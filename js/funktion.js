@@ -2,9 +2,9 @@
 
 
 /*let procent = document.querySelector('.loader');*/
-let button = document.getElementById("clickme"),
+let button = document.getElementById("clickme")
 
-count = 0;
+let count = 0;
 
 button.onclick = function() {
     count += 1;
@@ -15,19 +15,21 @@ button.onclick = function() {
     procent.innerHTML =  count + "% ";
 });*/
 
+let procent = document.querySelector('.loader');
+let button = document.getElementById("clickme")
 
-
-
-
-  /*  const readMores = document.querySelectorAll('div > .button');
-
-    for ( let i=0; i<readMores.length; i++ ) {
-        const readMore = readMores[i];
-        readMore.addEventListener('click', readMoreClick );
-    }
-
-    function readMoreClick( event ) {
-        const p = event.target.closest('p');
-        const fullText = p.dataset.fulltext;
-        return p.innerText = fullText;
-    }*/
+let count = 0;
+//nr1
+button.onclick = function() {
+    count += 1;
+    button.innerHTML = " Click on: " + count;
+    procent.innerHTML =  count + "% ";
+    console.log('btn');
+};
+//nr2
+/*button.addEventListener('click', function() {
+        count += 1;
+        button.innerHTML = " Click on: " + count;
+        procent.innerHTML =  count + "% ";
+        console.log('btn');
+});*/
